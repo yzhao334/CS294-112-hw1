@@ -2,14 +2,12 @@
 
 Dependencies: TensorFlow, MuJoCo version 1.31, OpenAI Gym
 
-The only file that you need to look at is `run_expert.py`, which is code to load up an expert policy, run a specified number of roll-outs, and save out data.
+Several files are used to perform imitation learning task, including:
+* imit_policy.py: basic structure of a 3-layer neural network
+* train_imit_policy.py: use tensorflow to train an imitation policy
+* run_imit_policy.py: show the performance of learned policy
+* train_dagger_policy.py: train imitation policy, use database from DAGGER
+* run_dagger_policy.py: run the learned policy and augment data set for DAGGER
+* main_dagger.py: script that keeps performing policy and training policy
 
-In `experts/`, the provided expert policies are:
-* Ant-v1.pkl
-* HalfCheetah-v1.pkl
-* Hopper-v1.pkl
-* Humanoid-v1.pkl
-* Reacher-v1.pkl
-* Walker2d-v1.pkl
-
-The name of the pickle file corresponds to the name of the gym environment.
+To show the performance of the learned policy, the file 'run_imit_policy.py' can always be used. To show the expert policy, use file 'run_expert.py'.

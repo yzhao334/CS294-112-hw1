@@ -1,6 +1,8 @@
 import pickle, tensorflow as tf, tf_util, numpy as np
 from tensorflow.contrib.labeled_tensor import batch
 
+# example usage python train_imit_policy.py Humanoid-v1 --num_epoches 200 --firsttime 0 --step_size 1e-4
+
 import imit_policy as imit
 
 import parameter as par

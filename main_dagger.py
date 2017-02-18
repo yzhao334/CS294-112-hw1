@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 import subprocess
 
+# run DAGGER, keep augmenting dataset and training
+
 def main(pars):
     for i in range(5):
         # run trained policy and enlarge database

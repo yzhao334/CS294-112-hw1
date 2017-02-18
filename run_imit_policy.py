@@ -3,10 +3,10 @@
 """
 Code to load an expert policy and generate roll-out data for behavioral cloning.
 Example usage:
-    python run_expert.py experts/Humanoid-v1.pkl Humanoid-v1 --render \
-            --num_rollouts 20
+    python run_imit_policy.py '' Humanoid-v1 --render --num_rollouts 20
 
-Author of this script and included expert policies: Jonathan Ho (hoj@openai.com)
+Author of this script: Yu Zhao (yzhao334@gmail.com)
+Modified from run_expert.py from Jonathan Ho
 """
 
 import pickle

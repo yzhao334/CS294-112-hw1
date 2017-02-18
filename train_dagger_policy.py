@@ -1,6 +1,8 @@
 import pickle, tensorflow as tf, tf_util, numpy as np
 from tensorflow.contrib.labeled_tensor import batch
 
+# see main_dagger for usage
+
 import imit_policy as imit
 
 import parameter as par

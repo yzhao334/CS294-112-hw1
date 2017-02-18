@@ -4,3 +4,10 @@
 #large files in this folder
 dagger_database/
 rollouts/
+
+#temp files
+*~
+
+#emacs temp files
+*#
+.#*
